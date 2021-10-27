@@ -1,10 +1,10 @@
 import React from 'react';
-import Final from './tutorial/1-useState/2-useState-basics';
+import Setup from './tutorial/1-useState/5-useState-counter';
 
 function App() {
   return (
     <div className='container'>
-      <Final/>
+      <Setup/>
     </div>
   )
 }
