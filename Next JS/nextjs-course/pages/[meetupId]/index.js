@@ -8,12 +8,16 @@ function MeetupDetails() {
     </>
   )
 }
-export async function getStaticPath(){
+export async function getStaticPaths(){
   return {
+    fallback: false,
     paths: [
       {params: {
         meetupId: 'm1'
-      }}
+      }},
+      {params: {
+        meetupId: 'm2'
+      }},
     ]
   }
 }
